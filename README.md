@@ -1,4 +1,4 @@
-# React Layout Kits &middot; [![](https://img.shields.io/badge/status-is%20developing-green.svg?style=flat)](#plugin)
+# React Layout Kits &middot; [![npm version](https://img.shields.io/npm/v/react-layout-kits.svg?style=flat)](https://www.npmjs.com/package/react-layout-kits)&nbsp;[![Build Status](https://travis-ci.org/iTonyYo/react-layout-kits.svg?branch=master)](https://travis-ci.org/iTonyYo/react-layout-kits)&nbsp;[![Coverage Status](https://coveralls.io/repos/github/iTonyYo/react-layout-kits/badge.svg?branch=master)](https://coveralls.io/github/iTonyYo/react-layout-kits?branch=master)&nbsp;[![](https://img.shields.io/npm/dm/react-layout-kits.svg)](https://www.npmjs.com/package/react-layout-kits)&nbsp;[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contribute)
 
 A set of layout components for react.
 

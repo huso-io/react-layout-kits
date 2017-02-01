@@ -1,4 +1,4 @@
-# `<FullCanvas/>` &middot;  [![npm version](https://img.shields.io/npm/v/react-fullcanvas.svg?style=flat)](https://www.npmjs.com/package/react-fullcanvas)&nbsp;[![Build Status](https://travis-ci.org/iTonyYo/react-fullcanvas.svg?branch=master)](https://travis-ci.org/iTonyYo/react-fullcanvas)&nbsp;[![Coverage Status](https://coveralls.io/repos/github/iTonyYo/react-fullcanvas/badge.svg?branch=master)](https://coveralls.io/github/iTonyYo/react-fullcanvas?branch=master)&nbsp;[![](https://img.shields.io/npm/dm/react-fullcanvas.svg)](https://www.npmjs.com/package/react-fullcanvas)&nbsp;[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contribute)
+# `<FullCanvas/>` &middot;  [![npm version](https://img.shields.io/npm/v/react-fullcanvas.svg?style=flat)](https://www.npmjs.com/package/react-fullcanvas)&nbsp;&nbsp;[![](https://img.shields.io/npm/dm/react-fullcanvas.svg)](https://www.npmjs.com/package/react-fullcanvas)&nbsp;[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contribute)
 
 A simple component for fully fill a given container. It's suitable for both of `react` and `react redux` projects.
 
