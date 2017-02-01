@@ -4,9 +4,16 @@ node_js:
   - "6.9.1"
   - "7.3.0"
   - "7.4.0"
+cache:
+  yarn: true
 before_install:
+  - npm install -g lerna
   - npm install -g babel
   - npm install -g gulp
   - npm install -g mocha
   - npm install -g chai
+  - npm install -g yarn
+install:
+  - lerna bootstrap
+  - yarn install
 after_success: npm run coverage
