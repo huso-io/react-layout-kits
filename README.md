@@ -18,8 +18,6 @@ yarn add react-layout-kits
 
 ## Usage
 
-> `react-layout-kits` was built with classnames, radium.
-
 ES6 and CommonJS builds are available with each distribution. For example:
 
 ```javascript
