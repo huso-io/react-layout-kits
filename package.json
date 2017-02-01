@@ -60,7 +60,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.5.4",
     "jsdom": "^9.9.1",
-    "lerna": "2.0.0-beta.34",
+    "lerna": "2.0.0-beta.35",
     "lodash": "^4.17.4",
     "merge-stream": "^1.0.1",
     "minimist": "^1.2.0",
