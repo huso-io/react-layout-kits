@@ -1,0 +1,5 @@
+gulp:
+  entry: ./src/component/Layout/index.js
+  output:
+    dist: ./lib/
+    es6: ./lib/es6/

@@ -1,0 +1,93 @@
+{
+  "name": "react-layout-kits",
+  "version": "0.0.0",
+  "description": "A set of layout components for react.",
+  "main": "./lib/index.js",
+  "module": "./lib/index.js",
+  "author": [
+    "iTonyYo <ceo@holaever.com> (https://itonyyo.com)"
+  ],
+  "homepage": "https://github.com/iTonyYo/react-layout-kits",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iTonyYo/react-layout-kits.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iTonyYo/react-layout-kits/issues"
+  },
+  "scripts": {
+    "start": "BABEL_ENV=development node_modules/.bin/webpack-dev-server --env=dev --progress --colors --open",
+    "build": "BABEL_ENV=production gulp",
+    "lint": "node_modules/.bin/eslint -c .eslintrc --quiet ./src/**",
+    "test": "node_modules/.bin/nyc --reporter=html --reporter=text node_modules/.bin/mocha test/setup.js test/index.js",
+    "flow": "node_modules/.bin/flow check",
+    "coverage": "node_modules/.bin/nyc report --reporter=text-lcov | node_modules/.bin/coveralls"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "react-layout-components",
+    "react-layout-kits"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-class-properties": "^6.22.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-es3-member-expression-literals": "^6.22.0",
+    "babel-plugin-transform-es3-property-literals": "^6.22.0",
+    "babel-plugin-transform-jscript": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.22.0",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "chai": "^3.5.0",
+    "config": "^1.25.0",
+    "coveralls": "^2.11.15",
+    "del": "^2.2.2",
+    "enzyme": "^2.7.1",
+    "eslint": "^3.14.1",
+    "eslint-plugin-compat": "^1.0.1",
+    "eslint-plugin-flowtype": "^2.30.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0",
+    "flow-bin": "^0.38.0",
+    "flow-remove-types": "^1.2.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "jsdom": "^9.9.1",
+    "lerna": "2.0.0-beta.34",
+    "lodash": "^4.17.4",
+    "merge-stream": "^1.0.1",
+    "minimist": "^1.2.0",
+    "mocha": "^3.2.0",
+    "mocha-lcov-reporter": "^1.2.0",
+    "nyc": "^10.1.2",
+    "radium": "^0.18.1",
+    "react": "^15.4.2",
+    "react-addons-test-utils": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-hot-loader": "next",
+    "require-dir": "^0.3.1",
+    "run-sequence": "^1.2.2",
+    "through2": "^2.0.3",
+    "webpack": "2.2.1",
+    "webpack-dev-server": "2.2.0"
+  },
+  "peerDependencies": {
+    "react": "^15.4.2"
+  },
+  "browserify-shim": {
+    "react": "global:React"
+  },
+  "private": false,
+  "engines": {
+    "node": ">=6.9.1 <=7.4.0",
+    "npm": ">=3.10 <=4.1.2"
+  },
+  "license": "MIT"
+}
