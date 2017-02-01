@@ -7,12 +7,12 @@ node_js:
 cache:
   yarn: true
 before_install:
-  - npm install -g lerna
-  - npm install -g babel
-  - npm install -g gulp
-  - npm install -g mocha
-  - npm install -g chai
-  - npm install -g yarn
+  - npm i -g lerna
+  - npm i -g babel
+  - npm i -g gulp
+  - npm i -g mocha
+  - npm i -g chai
+  - npm i -g yarn
 install:
   - lerna bootstrap
   - yarn install
