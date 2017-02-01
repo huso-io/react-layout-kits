@@ -52,11 +52,14 @@ PRs accepted.
 
 ## Todo
 
-- [ ] choose a more accurate name for the component
+- [ ] make it more accessible for everyone
+- [ ] add doc for introducing accessibility
+- [ ] add doc like [`react-canvas`](https://github.com/Flipboard/react-canvas#react-canvas-components) for introducing each (high-order) component
 - [ ] add doc for introducing how to build
 - [ ] add doc for introducing how to preview the given example in the local
 - [ ] add doc for introducing the inspiration(or motivation) for creating this component
 - [ ] provide schematic
+- [ ] tell the advantages
 - [ ] provide roadmap
 - [ ] provide release notes
 - [ ] provide changelog
@@ -66,7 +69,7 @@ PRs accepted.
 - [ ] provide help center(or recipes...)
 - [ ] add supported browsers
 - [ ] provide umd build
-- [ ] add `Thanks` section for some help from articles & developers
+- [ ] add `Thanks` section for some help from articles & developers(like [node-config](https://github.com/lorenwest/node-config#contributors) did)
 - [ ] optimize docs
 
 ## License
