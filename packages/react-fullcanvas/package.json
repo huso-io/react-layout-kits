@@ -1,6 +1,6 @@
 {
   "name": "react-fullcanvas",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A simple component for fully fill a given container.",
   "main": "./lib/index.js",
   "module": "./lib/index.js",
