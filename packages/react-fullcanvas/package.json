@@ -7,13 +7,13 @@
   "author": [
     "iTonyYo <ceo@holaever.com> (https://itonyyo.com)"
   ],
-  "homepage": "https://github.com/iTonyYo/react-fullcanvas",
+  "homepage": "https://github.com/iTonyYo/react-layout-kits",
   "repository": {
     "type": "git",
-    "url": "https://github.com/iTonyYo/react-fullcanvas.git"
+    "url": "https://github.com/iTonyYo/react-layout-kits.git"
   },
   "bugs": {
-    "url": "https://github.com/iTonyYo/react-fullcanvas/issues"
+    "url": "https://github.com/iTonyYo/react-layout-kits/issues"
   },
   "dependencies": {
     "classnames": "^2.2.5",
