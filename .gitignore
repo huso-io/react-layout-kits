@@ -222,6 +222,7 @@ GitHub.sublime-settings
 #    `\/__/   \/_____/    \/___/  \/___/  \/__,_ / \/____/
 
 .vscode/*
+!.vscode/formatter.json
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
