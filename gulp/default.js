@@ -3,6 +3,9 @@
 import gulp from 'gulp';
 import sequence from 'run-sequence';
 
-gulp.task('default', (cb) => (
-  sequence('clean', [ 'build', 'flow-remove-types' ], 'replace', cb)
-));
+gulp.task('default', (cb) => {
+  return sequence('clean', [
+    'build',
+    'flow-remove-types'
+  ], 'replace', cb);
+});
