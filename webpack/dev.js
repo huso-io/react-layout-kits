@@ -26,7 +26,7 @@ export default {
   target: 'web',
   entry: [
     'react-hot-loader/patch',
-    'webpack-dev-server/client?https://'+ getExternalIpAddress() +':9898',
+    'webpack-dev-server/client?https://' + getExternalIpAddress() + ':9898',
     'webpack/hot/only-dev-server',
     './src/index.js'
   ],
