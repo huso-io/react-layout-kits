@@ -13,6 +13,7 @@
 ./src/component/.*
 
 [libs]
+flow-typed
 
 [options]
 esproposal.class_static_fields=enable
@@ -23,4 +24,4 @@ module.ignore_non_literal_requires=true
 munge_underscores=true
 
 [version]
-0.41.0
+0.48.0

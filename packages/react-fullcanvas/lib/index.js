@@ -12,6 +12,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _radium = require('radium');
 
 var _radium2 = _interopRequireDefault(_radium);
@@ -73,9 +77,9 @@ var FullCanvas = (0, _radium2['default'])(_class = function (_Component) {
 }(_react.Component)) || _class;
 
 FullCanvas.propTypes = {
-  id: _react.PropTypes.string,
-  className: _react.PropTypes.string,
-  style: _react.PropTypes.oneOfType([_react.PropTypes.array, _react.PropTypes.string, _react.PropTypes.object]),
-  children: _react.PropTypes.oneOfType([_react.PropTypes.array, _react.PropTypes.object])
+  id: _propTypes2['default'].string,
+  className: _propTypes2['default'].string,
+  style: _propTypes2['default'].oneOfType([_propTypes2['default'].array, _propTypes2['default'].string, _propTypes2['default'].object]),
+  children: _propTypes2['default'].oneOfType([_propTypes2['default'].array, _propTypes2['default'].object])
 };
 exports['default'] = FullCanvas;

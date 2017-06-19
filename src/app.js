@@ -6,7 +6,9 @@ import Radium from 'radium';
 class App extends Component {
   render() {
     return (
-      <FullCanvas></FullCanvas>
+      <FullCanvas>
+        <div>FullCanvas Demo</div>
+      </FullCanvas>
     );
   }
 }

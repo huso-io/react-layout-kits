@@ -1,5 +1,8 @@
 {
   "preset": "google",
-  "excludeFiles": ["node_modules/**", "bower_components/**", "data"],
-  "disallowMultipleVarDecl": false
+  "excludeFiles": ["node_modules/**", "coverage/**", "packages/**", "lib/**"],
+  "disallowMultipleVarDecl": false,
+  "validateQuoteMarks": false,
+  "requireCamelCaseOrUpperCaseIdentifiers": false,
+  "maximumLineLength": false
 }

@@ -26,6 +26,7 @@ describe("<FullCanvas />", () => {
     let renderedHtml = '<div class="full-canvas" data-radium="true" ' +
                        'style="overflow: hidden; width: 100%; height: 100%; ' +
                        'box-sizing: border-box;"></div>';
+    console.log( mount(<FullCanvas />).html() );
     expect(
       mount(<FullCanvas />)
       .html()

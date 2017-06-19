@@ -298,3 +298,13 @@ tmtags
 npm-debug.log
 yarn-error.log
 lerna-error.log
+
+
+
+
+
+
+
+
+
+*.har
