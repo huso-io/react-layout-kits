@@ -13,7 +13,6 @@
     "lerna": "node_modules/.bin/lerna bootstrap",
     "check-large-dirs": "node_modules/.bin/space-hogs",
     "pre-dev": "yarn install --force --check-files --har && yarn check-large-dirs",
-    "install": "yarn lerna",
     "start": "node_modules/.bin/cross-env BABEL_ENV=development node_modules/.bin/webpack-dev-server --env=dev --progress --colors --open",
     "build": "node_modules/.bin/cross-env BABEL_ENV=production gulp",
     "lint": "node_modules/.bin/eslint -c .eslintrc --quiet ./src/**",
