@@ -1,5 +1,6 @@
 gulp:
-  entry: ./src/component/FullCanvas/index.js
+  jsEntry: ./src/component/FullCanvas/index.js
+  cssEntry: ./src/component/FullCanvas/index.css
   output:
     dist: ./lib
     es6: ./lib/es6
