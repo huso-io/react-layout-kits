@@ -1,52 +1,40 @@
 //      
 
-import React, { Component } from 'react';
+import './index.css';
+
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import Radium from 'radium';
 import cn from 'classnames';
 
-let styles = {
-  default: {
-    overflow: 'hidden',
-    width: '100%',
-    height: '100%',
-    boxSizing: 'border-box'
-  }
+const PROPTYPES = {
+  id: PropTypes.string,
+  className: PropTypes.string,
+  style: PropTypes.object,
+  children: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.object
+  ]),
 };
 
-@Radium
-class FullCanvas extends Component {
-  static propTypes = {
-    id: PropTypes.string,
-    className: PropTypes.string,
-    style: PropTypes.oneOfType([
-      PropTypes.array,
-      PropTypes.string,
-      PropTypes.object
-    ]),
-    children: PropTypes.oneOfType([
-      PropTypes.array,
-      PropTypes.object
-    ])
-  }
-  constructor(props        ) {
-    super(props);
-  }
+class FullCanvas extends PureComponent {
   render() {
     let {
       id,
       className,
       style,
-      children
+      children,
     } = this.props;
+
     return (
       <div id={ id }
-           style={ [styles.default, style] }
+           style={ style }
            className={ cn('full-canvas', className) }>
         { children }
       </div>
     );
   }
 }
+
+FullCanvas.propTypes = PROPTYPES;
 
 export default FullCanvas;

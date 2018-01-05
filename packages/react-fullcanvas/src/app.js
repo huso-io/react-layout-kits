@@ -5,7 +5,7 @@ import Radium from 'radium';
 class App extends Component {
   render() {
     return (
-      <FullCanvas style='position: relative'
+      <FullCanvas style={ {position: 'relative'} }
                   className='bg-test-fill-radial-gradient'>
         <i className='xy-center dot'/>
       </FullCanvas>

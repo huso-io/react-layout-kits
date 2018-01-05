@@ -7,7 +7,7 @@ import config from 'config';
 
 gulp.task('flow-remove-types', () => (
   gulp
-  .src(config.get('gulp.entry'))
+  .src(config.get('gulp.jsEntry'))
   .pipe(through2.obj((file, enc, cb) => {
     file.contents = new Buffer(removeFlowType(file.contents.toString('utf8')).toString())
     cb(null, file);

@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _class;
+require('./index.css');
 
 var _react = require('react');
 
@@ -15,10 +15,6 @@ var _react2 = _interopRequireDefault(_react);
 var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _radium = require('radium');
-
-var _radium2 = _interopRequireDefault(_radium);
 
 var _classnames = require('classnames');
 
@@ -32,22 +28,20 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var styles = {
-  'default': {
-    overflow: 'hidden',
-    width: '100%',
-    height: '100%',
-    boxSizing: 'border-box'
-  }
+var PROPTYPES = {
+  id: _propTypes2['default'].string,
+  className: _propTypes2['default'].string,
+  style: _propTypes2['default'].object,
+  children: _propTypes2['default'].oneOfType([_propTypes2['default'].array, _propTypes2['default'].object])
 };
 
-var FullCanvas = (0, _radium2['default'])(_class = function (_Component) {
-  _inherits(FullCanvas, _Component);
+var FullCanvas = function (_PureComponent) {
+  _inherits(FullCanvas, _PureComponent);
 
-  function FullCanvas(props) {
+  function FullCanvas() {
     _classCallCheck(this, FullCanvas);
 
-    return _possibleConstructorReturn(this, (FullCanvas.__proto__ || Object.getPrototypeOf(FullCanvas)).call(this, props));
+    return _possibleConstructorReturn(this, (FullCanvas.__proto__ || Object.getPrototypeOf(FullCanvas)).apply(this, arguments));
   }
 
   _createClass(FullCanvas, [{
@@ -60,10 +54,11 @@ var FullCanvas = (0, _radium2['default'])(_class = function (_Component) {
             style = _props.style,
             children = _props.children;
 
+
         return _react2['default'].createElement(
           'div',
           { id: id,
-            style: [styles['default'], style],
+            style: style,
             className: (0, _classnames2['default'])('full-canvas', className) },
           children
         );
@@ -74,12 +69,8 @@ var FullCanvas = (0, _radium2['default'])(_class = function (_Component) {
   }]);
 
   return FullCanvas;
-}(_react.Component)) || _class;
+}(_react.PureComponent);
 
-FullCanvas.propTypes = {
-  id: _propTypes2['default'].string,
-  className: _propTypes2['default'].string,
-  style: _propTypes2['default'].oneOfType([_propTypes2['default'].array, _propTypes2['default'].string, _propTypes2['default'].object]),
-  children: _propTypes2['default'].oneOfType([_propTypes2['default'].array, _propTypes2['default'].object])
-};
+FullCanvas.propTypes = PROPTYPES;
+
 exports['default'] = FullCanvas;

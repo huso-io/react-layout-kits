@@ -10,6 +10,7 @@ import {
   get,
   isEqual
 } from 'lodash';
+import autoprefixer from 'autoprefixer';
 
 const getExternalIpAddress = () => {
   let externalIpAddress;
@@ -55,7 +56,51 @@ export default {
           'babel-loader',
         ],
         exclude: /node_modules/
-      }
+      },
+      {
+        // "oneOf" will traverse all following loaders until one will
+        // match the requirements. When no loader matches it will fall
+        // back to the "file" loader at the end of the loader list.
+        oneOf: [
+          // "postcss" loader applies autoprefixer to our CSS.
+          // "css" loader resolves paths in CSS and adds assets as dependencies.
+          // "style" loader turns CSS into JS modules that inject <style> tags.
+          // In production, we use a plugin to extract that CSS to a file, but
+          // in development "style" loader enables hot editing of CSS.
+          {
+            test: /\.css$/,
+            use: [
+              require.resolve('style-loader'),
+              {
+                loader: require.resolve('css-loader'),
+                options: {
+                  importLoaders: 1,
+                },
+              },
+              {
+                loader: require.resolve('postcss-loader'),
+                options: {
+                  // Necessary for external CSS imports to work
+                  // https://github.com/facebookincubator/create-react-app/issues/2677
+                  ident: 'postcss',
+                  plugins: () => [
+                    require('postcss-flexbugs-fixes'),
+                    autoprefixer({
+                      browsers: [
+                        '>1%',
+                        'last 3 versions',
+                        'Firefox ESR',
+                        'not ie_mob < 10',
+                      ],
+                      flexbox: 'no-2009',
+                    }),
+                  ],
+                },
+              },
+            ],
+          },
+        ],
+      },
     ],
   },
   plugins: [
